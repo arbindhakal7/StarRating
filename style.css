@@ -16,9 +16,20 @@ body{
 
 .head{
     color: whitesmoke;
-    animation: scale-up 1s ease;
+    animation: scale-up 2s ease;
 }
 
+@keyframes scale-up {
+    0%{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
 
 /* this doesn't allow users to select the stars by clicking and sliding like when we do while copying text */
 .star_rating{
@@ -28,6 +39,20 @@ body{
     margin: 2rem;
     border-radius: 2rem;
     text-align: center;
+
+    animation: slide-up 1s ease-in-out;
+}
+
+@keyframes slide-up {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
 .star{
