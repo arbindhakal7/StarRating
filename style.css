@@ -1,67 +1,69 @@
-*{
-    padding: 0; 
-    margin: 0; 
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(45deg, rgba(128, 0, 128, 0.76),rgba(0, 0, 255, 0.603));
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    45deg,
+    rgba(128, 0, 128, 0.76),
+    rgba(0, 0, 255, 0.603)
+  );
 }
 
-.head{
-    color: whitesmoke;
-    animation: scale-up 2s ease;
+.head {
+  color: whitesmoke;
+  animation: scale-up 2s ease;
 }
 
 @keyframes scale-up {
-    0%{
-        opacity: 0;
-        transform: scale(0.1);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1);
-    }
-
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* this doesn't allow users to select the stars by clicking and sliding like when we do while copying text */
-.star_rating{
-    user-select: none;
-    background-color: wheat;
-    padding: 1.4rem 2.5rem;
-    margin: 2rem;
-    border-radius: 2rem;
-    text-align: center;
+.star_rating {
+  user-select: none;
+  background-color: wheat;
+  padding: 1.4rem 2.5rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  text-align: center;
 
-    animation: slide-up 1s ease-in-out;
+  animation: slide-up 1s ease-in-out;
 }
 
 @keyframes slide-up {
-    0%{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-.star{
-    font-size: 3rem;
-    color: goldenrod;
-    background-color: unset;
-    border: none;
+.star {
+  font-size: 3rem;
+  color: goldenrod;
+  background-color: unset;
+  border: none;
 }
 
-.star:hover{
-    cursor: pointer;
+.star:hover {
+  cursor: pointer;
 }
