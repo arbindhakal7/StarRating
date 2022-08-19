@@ -4,3 +4,25 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* this doesn't allow users to select the stars by clicking and sliding like when we do while copying text */
+.star_rating{
+    user-select: none;
+}
+
+.star{
+    font-size: 3rem;
+    color: goldenrod;
+    background-color: unset;
+    border: none;
+}
+
+.star:hover{
+    cursor: pointer;
+}
